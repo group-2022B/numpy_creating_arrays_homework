@@ -7,13 +7,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - run: pip install numpy
-      
+
       # Checkout the repository
       - name: Checkout the repository
         uses: actions/checkout@v2
 
         with:
-          repository: codeschooluz/list_methods_test
+          repository: codeschooluz/numpy_creating_arrays_test
           token: ${{secrets.TEST_KEY}}
           path: test
       - name: Install dependencies
